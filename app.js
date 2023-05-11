@@ -4,7 +4,7 @@ import todoRouter from './routers/todoRouter.js';
 const app = express();
 app.use(express.json());
 
-// app.get("/", (req, res) => res.send("Hello world."));
+app.get("/", (req, res) => res.send("Hello world."));
 
 app.use("/", todoRouter);
 
